@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 15px;
+  width: 250px;
+  height: auto;
+  text-align: center;
+  gap: 20px;
+  & .btn-show {
+    margin: 0 auto;
+    width: 50px;
+  }
+}       
+.books {
+  flex: 1;
+  & h2 {
+    text-align: center;
+  }
+  & .container-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}
+
+/*Todo esto lo añadire con js*/
+
+.form-books {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  margin: auto;
+  padding: 45px 30px;
+  width: 320px;
+  gap: 20px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  display: none;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.display {
+  border: 20px solid red;
+}
+
+.card {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 10px;
+  height: auto;
+  width: 450px;
+  & select {
+    height: 25px;
+  }
+}

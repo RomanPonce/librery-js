@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Docasdument</title>
+  </head>
+  <body>
+    <form class="form-books">
+      <label>
+        <span>Name of book</span>
+        <input type="text" class="book-title" placeholder="Ficciones" required/>
+      </label>
+      <label>
+        <span>Name of Author</span>
+        <input type="text" class="book-author" placeholder="Borges" required/>
+      </label>
+      <label>
+        <span>pages</span>
+        <input type="number" class="book-pages" min="0" required/>
+      </label>
+      <button type="submit"  class="book-add">Enviar</button>
+    </form>
     <div id="container">
-        <h1>My librery</h1>
-        <form action="">
-            <label for="">
-                <span>Name of book</span>
-                <input type="text" class="title">
-            </label>
-            <label for="">
-                <span>Name of Author</span>
-                <input type="text" class="author">
-            </label>
-            <label for="">
-                <span>pages</span>
-                <input type="number" class="pages">
-            </label>
-            <button>Add</button>
-        </form>
+      <div class="main">
+        <h1 class="web-title">mi libreria</h1>
+        <p>Pulsa el boton para añadir libros</p>
+        <button class="btn-show">Añadir</button>
+      </div>
+      <div class="books">
         <h2>Books</h2>
-        <ul>
-        </ul>
-        <table>
-            <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Pages</th>
-            </tr>
-        </table>
+        <div class="container-card">
+        </div>
+      </div>
     </div>
     <script src="app.js" defer></script>
-</body>
+  </body>
 </html>
