@@ -7,21 +7,28 @@
     <title>Docasdument</title>
   </head>
   <body>
-    <form class="form-books">
-      <label>
-        <span>Name of book</span>
-        <input type="text" class="book-title" placeholder="Ficciones" required/>
-      </label>
-      <label>
-        <span>Name of Author</span>
-        <input type="text" class="book-author" placeholder="Borges" required/>
-      </label>
-      <label>
-        <span>pages</span>
-        <input type="number" class="book-pages" min="0" required/>
-      </label>
-      <button type="submit"  class="book-add">Enviar</button>
-    </form>
+    <dialog>
+      <form class="form-books">
+        <label>
+          <span>Name of book</span>
+          <input
+            type="text"
+            class="book-title"
+            placeholder="Ficciones"
+            required
+          />
+        </label>
+        <label>
+          <span>Name of Author</span>
+          <input type="text" class="book-author" placeholder="Borges" required />
+        </label>
+        <label>
+          <span>pages</span>
+          <input type="number" class="book-pages" min="0" required />
+        </label>
+        <button type="submit" class="book-add">Enviar</button>
+      </form>
+    </dialog>
     <div id="container">
       <div class="main">
         <h1 class="web-title">mi libreria</h1>
@@ -30,8 +37,7 @@
       </div>
       <div class="books">
         <h2>Books</h2>
-        <div class="container-card">
-        </div>
+        <div class="container-card"></div>
       </div>
     </div>
     <script src="app.js" defer></script>

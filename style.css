@@ -37,22 +37,16 @@
 }
 
 /*Todo esto lo añadire con js*/
-
-.form-books {
+.modal{
+  border: 0 transparent black;
+}
+form{
   display: flex;
   flex-direction: column;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 20px;
-  margin: auto;
-  padding: 45px 30px;
-  width: 320px;
   gap: 20px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  display: none;
+  padding: 20px;
 }
+
 label {
   display: flex;
   flex-direction: column;
@@ -65,13 +59,14 @@ label {
 
 .card {
   display: flex;
-  gap: 15px;
+  gap: 40px;
   justify-content: space-between;
   margin: 0 auto;
   padding: 20px 10px;
   height: auto;
-  width: 450px;
+  width: auto;
   & select {
     height: 25px;
+    width: 50px;
   }
 }
