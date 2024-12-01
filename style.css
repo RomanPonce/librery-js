@@ -28,17 +28,17 @@
   & h2 {
     text-align: center;
   }
-  & .container-card {
+  & .container-books {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 20px;
     padding: 20px 0;
   }
 }
 
 /*Todo esto lo añadire con js*/
-.modal{
-  border: 0 transparent black;
+dialog{
+  border: none !important;
 }
 form{
   display: flex;

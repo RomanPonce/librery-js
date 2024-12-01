@@ -4,42 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Docasdument</title>
+    <title>My librery</title>
   </head>
   <body>
-    <dialog>
-      <form class="form-books">
+    <dialog class="modal">
+      <form class="form">
         <label>
           <span>Name of book</span>
           <input
             type="text"
-            class="book-title"
+            class="title-book"
             placeholder="Ficciones"
             required
           />
         </label>
         <label>
           <span>Name of Author</span>
-          <input type="text" class="book-author" placeholder="Borges" required />
+          <input type="text" class="author-book" placeholder="Borges" required/>
         </label>
         <label>
           <span>pages</span>
-          <input type="number" class="book-pages" min="0" required />
+          <input type="number" class="pages-book" min="0" required/>
         </label>
-        <button type="submit" class="book-add">Enviar</button>
+        <button type="submit">Enviar</button>
       </form>
     </dialog>
+    
     <div id="container">
       <div class="main">
         <h1 class="web-title">mi libreria</h1>
         <p>Pulsa el boton para añadir libros</p>
-        <button class="btn-show">Añadir</button>
+        <button class="open-modal">Añadir</button>
       </div>
       <div class="books">
         <h2>Books</h2>
-        <div class="container-card"></div>
+        <div class="container-books"></div>
       </div>
     </div>
-    <script src="app.js" defer></script>
+    <script src="app.js" type="module" defer></script>
   </body>
 </html>
